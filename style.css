@@ -10,7 +10,7 @@ html {
   text-align: center;
 }
 
-button {
+.btn {
   min-width: 150px;
   min-height: 50px;
   font-size: 20px;
@@ -21,6 +21,21 @@ button {
   /* border: none; */
 }
 
-button:hover {
+.btn:hover {
   background-color: rgb(0, 1, 10);
+}
+
+.author {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+p {
+  font-style: italic;
+}
+
+.quote::after,
+.quote::before {
+  content: '"';
 }
