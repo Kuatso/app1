@@ -59,3 +59,11 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   width: 250px;
 }
+
+.star-icon {
+  font-size: 35px;
+  cursor: pointer;
+  color: yellow;
+  vertical-align: middle;
+  padding-left: 10px;
+}
