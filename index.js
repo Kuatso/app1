@@ -1,4 +1,5 @@
 import posts from "./src/quotes.js";
+import { rndmx } from "./src/utils.js";
 import {
   hideFavCard,
   showFavCard,
@@ -14,9 +15,10 @@ const fovaritesContainer = document.getElementById("fovarite-container");
 let currentQuoteindex;
 
 const gnrBtn = () => {
-  currentQuoteindex = Math.floor(Math.random() * posts.length);
-  const randomQuote = posts[currentQuoteindex];
+  const randomIndex = rndmx(posts.length);
+  const randomQuote = posts[randomIndex];
   const { quote, author } = randomQuote;
+  currentQuoteindex = randomIndex;
   quoteElement.textContent = quote;
   quoteAuthor.textContent = author;
   console.log(randomQuote.author);
